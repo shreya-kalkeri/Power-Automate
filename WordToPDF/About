@@ -1,1 +1,20 @@
-I used "Power Automate" app in office 360 to do this project.  
+I used "Power Automate" app in office 360 to do this project.    
+This flow picks all the word files put in a specifired source folder and on running the flow converts word file to pdf file and saves it in the destination folder.  
+
+Steps followed:  
+1. Create  
+2. Automated Cloud Flow  
+3. Give a flow name  
+4. In "choose a flow's trigger", type onedrive(your source), choose "When a flow is created"  
+5. Choose a folder you want to convert  
+6. Click on "New Step"  
+7. "Choose an action",type (onedrive), choose "Convert file"  
+8. Do not choose the a file you want to convert rather choose Dynamic content--> File identifies, so that all the files in source folder are converted  
+9. Target Type as PDF  
+10.New Step (to save the file)  
+11."Choose an operation", choose "Create file"  
+12.Folder path : choose your destination folder where you want to save the pdf
+13.File name --> Dynamic content-> File name  
+14.File content --> Dynamic content --> File content
+15.Save
+
